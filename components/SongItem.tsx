@@ -34,6 +34,7 @@ const SongItem: React.FC<SongItemProps> = ({
         bg-neutral-400/5 
         cursor-pointer 
         hover:bg-neutral-400/10 
+        duration-500
         transition 
         p-3
       "

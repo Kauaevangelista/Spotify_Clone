@@ -63,6 +63,7 @@ const Header: React.FC<HeaderProps> = ({
               justify-center 
               cursor-pointer 
               hover:opacity-75 
+              duration-500
               transition
             "
           >
@@ -78,6 +79,7 @@ const Header: React.FC<HeaderProps> = ({
               justify-center 
               cursor-pointer 
               hover:opacity-75 
+              duration-500
               transition
             "
           >
@@ -96,6 +98,7 @@ const Header: React.FC<HeaderProps> = ({
               justify-center 
               cursor-pointer 
               hover:opacity-75 
+              duration-500
               transition
             "
           >
@@ -112,6 +115,7 @@ const Header: React.FC<HeaderProps> = ({
               justify-center 
               cursor-pointer 
               hover:opacity-75 
+              duration-500
               transition
             "
           >
@@ -125,7 +129,7 @@ const Header: React.FC<HeaderProps> = ({
                 onClick={handleLogout} 
                 className="bg-white px-6 py-2"
               >
-                Logout
+                Sair
               </Button>
               <Button 
                 onClick={() => router.push('/account')} 
@@ -145,7 +149,7 @@ const Header: React.FC<HeaderProps> = ({
                     font-medium
                   "
                 >
-                  Sign up
+                  Inscrição
                 </Button>
               </div>
               <div>
@@ -153,7 +157,7 @@ const Header: React.FC<HeaderProps> = ({
                   onClick={authModal.onOpen} 
                   className="bg-white px-6 py-2"
                 >
-                  Log in
+                  Login
                 </Button>
               </div>
             </>

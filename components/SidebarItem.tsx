@@ -28,6 +28,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
         text-md 
         font-medium
         cursor-pointer
+        duration-500
         hover:text-white
         transition
         text-neutral-400

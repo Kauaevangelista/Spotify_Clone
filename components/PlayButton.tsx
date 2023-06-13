@@ -16,6 +16,7 @@ const PlayButton = () => {
         translate
         translate-y-1/4
         group-hover:opacity-100 
+        duration-500
         group-hover:translate-y-0
         hover:scale-110
       "

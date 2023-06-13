@@ -154,6 +154,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
               text-neutral-400 
               cursor-pointer 
               hover:text-white 
+              duration-500
               transition
             "
           />
@@ -180,6 +181,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
               text-neutral-400 
               cursor-pointer 
               hover:text-white 
+              duration-500
               transition
             " 
           />

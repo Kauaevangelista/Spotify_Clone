@@ -90,6 +90,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({
         cursor-pointer 
         hover:opacity-75 
         transition
+        duration-500
       "
       onClick={handleLike}
     >

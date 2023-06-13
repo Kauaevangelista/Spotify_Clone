@@ -77,6 +77,7 @@ const Modal: React.FC<ModalProps> = ({
               className="
                 text-neutral-400 
                 hover:text-white 
+                duration-500
                 absolute 
                 top-[10px] 
                 right-[10px] 

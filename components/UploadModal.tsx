@@ -50,7 +50,7 @@ const UploadModal = () => {
       const songFile = values.song?.[0];
 
       if (!imageFile || !songFile || !user) {
-        toast.error('Missing fields')
+        toast.error('Faltando informações')
         return;
       }
 
@@ -70,7 +70,7 @@ const UploadModal = () => {
 
       if (songError) {
         setIsLoading(false);
-        return toast.error('Failed song upload');
+        return toast.error('Falha ao fazer upload da música');
       }
 
       // Upload image
@@ -87,7 +87,7 @@ const UploadModal = () => {
 
       if (imageError) {
         setIsLoading(false);
-        return toast.error('Failed image upload');
+        return toast.error('Falha ao fazer upload da imagem');
       }
 
       
@@ -108,11 +108,11 @@ const UploadModal = () => {
       
       router.refresh();
       setIsLoading(false);
-      toast.success('Song created!');
+      toast.success('Música criada!');
       reset();
       uploadModal.onClose();
     } catch (error) {
-      toast.error('Something went wrong');
+      toast.error('Algo de errado');
     } finally {
       setIsLoading(false);
     }
@@ -120,8 +120,8 @@ const UploadModal = () => {
 
   return (
     <Modal
-      title="Add a song"
-      description="Upload an mp3 file"
+      title="Adicione uma música"
+      description="Upload um arquivo MP3"
       isOpen={uploadModal.isOpen}
       onChange={onChange}
     >
@@ -133,17 +133,17 @@ const UploadModal = () => {
           id="title"
           disabled={isLoading}
           {...register('title', { required: true })}
-          placeholder="Song title"
+          placeholder="Titulo da música"
         />
         <Input
           id="author"
           disabled={isLoading}
           {...register('author', { required: true })}
-          placeholder="Song author"
+          placeholder="Autor da música"
         />
         <div>
           <div className="pb-1">
-            Select a song file
+            Selecione um arquivo de música
           </div>
           <Input
             placeholder="test" 
@@ -156,7 +156,7 @@ const UploadModal = () => {
         </div>
         <div>
           <div className="pb-1">
-            Select an image
+            Selecione uma imagem
           </div>
           <Input
             placeholder="test" 
@@ -168,7 +168,7 @@ const UploadModal = () => {
           />
         </div>
         <Button disabled={isLoading} type="submit">
-          Create
+          Criar
         </Button>
       </form>
     </Modal>

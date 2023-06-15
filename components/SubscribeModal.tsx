@@ -70,7 +70,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
 
   let content = (
     <div className="text-center">
-      No products available.
+      Não há produtos disponíveis.
     </div>
   )
 
@@ -81,7 +81,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
           if (!product.prices?.length) {
             return (
               <div key={product.id}>
-                No prices available
+                Não há preços disponiveis
               </div>
             );
           }
@@ -111,8 +111,8 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
 
   return (
     <Modal
-      title="Only for premium users"
-      description="Listen to music with Spotify Premium"
+      title="Apenas para usuários premium"
+      description="Ouça música com o Spotify Premium"
       isOpen={subscribeModal.isOpen}
       onChange={onChange}
     >

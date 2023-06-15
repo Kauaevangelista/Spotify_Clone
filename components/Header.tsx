@@ -38,6 +38,8 @@ const Header: React.FC<HeaderProps> = ({
 
     if (error) {
       toast.error(error.message);
+    } else {
+      toast.success('Saiu')
     }
   }
 

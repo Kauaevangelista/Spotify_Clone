@@ -32,6 +32,8 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
         disabled:cursor-not-allowed 
         disabled:opacity-50
         focus:outline-none
+        duration-500
+        hover:border-greenSpotify
       `,
         disabled && 'opacity-75',
         className

@@ -64,6 +64,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({
         toast.error(error.message);
       } else {
         setIsLiked(false);
+        toast.success('Curtida removida!')
       }
     } else {
       const { error } = await supabaseClient
@@ -77,7 +78,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({
         toast.error(error.message);
       } else {
         setIsLiked(true);
-        toast.success('Success');
+        toast.success('Sucesso');
       }
     }
 

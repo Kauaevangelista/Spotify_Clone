@@ -121,7 +121,7 @@ const UploadModal = () => {
   return (
     <Modal
       title="Adicione uma música"
-      description="Upload um arquivo MP3"
+      description="Carregue um arquivo MP3"
       isOpen={uploadModal.isOpen}
       onChange={onChange}
     >

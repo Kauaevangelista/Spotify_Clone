@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         greenSpotify: '#22c55e'
-      }
+      },
     },
   },
   plugins: [],

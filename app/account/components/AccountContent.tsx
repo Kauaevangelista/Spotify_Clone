@@ -34,6 +34,8 @@ const AccountContent = () => {
     setLoading(false);
   };
 
+  const subscriptionName = (subscription?.prices?.products?.name)?.replace('_', ' ')
+
   return ( 
     <div className="mb-7 px-6">
       {!subscription && (
@@ -49,16 +51,15 @@ const AccountContent = () => {
       )}
       {subscription && (
         <div className="flex flex-col gap-y-4">
-          <p>You are currently on the 
-            <b> {subscription?.prices?.products?.name} </b> 
-            plan.
+          <p>Você está atualmente no plano
+            <b> {subscriptionName} </b> 
           </p>
           <Button
             disabled={loading || isLoading}
             onClick={redirectToCustomerPortal}
-            className="w-[300px]"
+            className="w-[300px] max-[320px]:w-[100%]"
           >
-            Open customer portal
+           Abrir portal do cliente
           </Button>
         </div>
       )}
